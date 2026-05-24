@@ -24,6 +24,7 @@ jobs:
         uses: 8G4B/GSM-SV-Deploy@v1.2.1
         with:
           host: ${{ secrets.SSH_HOST }}
+          port: ${{ secrets.SSH_PORT }}
           user: ${{ secrets.SSH_USERNAME }}
           password: ${{ secrets.SSH_PASSWORD }}
           target_path: ~/Claude-Initer
